@@ -6,4 +6,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Projetos\Repositories\" />
+    <Folder Include="Projetos\Queries\" />
+    <Folder Include="Tarefas\Queries\" />
+    <Folder Include="Tarefas\Repositories\" />
+    <Folder Include="Usuarios\Commands\" />
+    <Folder Include="Usuarios\Queries\" />
+    <Folder Include="Usuarios\Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
 </Project>
