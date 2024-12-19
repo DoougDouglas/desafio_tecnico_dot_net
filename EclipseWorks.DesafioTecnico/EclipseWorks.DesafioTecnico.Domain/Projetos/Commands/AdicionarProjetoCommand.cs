@@ -2,5 +2,5 @@
 
 namespace EclipseWorks.DesafioTecnico.Domain.Projetos.Commands
 {
-    public sealed record AdicionarProjetoCommand(string nome) : IRequest { }
+    public sealed record AdicionarProjetoCommand(string Nome) : IRequest { }
 }
