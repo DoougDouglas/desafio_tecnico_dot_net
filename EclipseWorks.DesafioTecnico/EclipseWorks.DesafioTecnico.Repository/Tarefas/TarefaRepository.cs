@@ -38,7 +38,7 @@ namespace EclipseWorks.DesafioTecnico.Repository.Tarefas
             .Where(tarefa => tarefa.IdProjeto == idProjeto && !tarefa.Projeto.isExcluido && !tarefa.isExcluido)
             .ToListAsync();
 
-        public async Task<IEnumerable<int>> RecuperarQuantidadePOrProjeto(Guid idProjeto) => await _context.Tarefas
+        public async Task<int> RecuperarQuantidadePorProjeto(Guid idProjeto) => await _context.Tarefas
            .AsNoTracking()
            .Where(tarefa => tarefa.IdProjeto == idProjeto && !tarefa.Projeto.isExcluido && !tarefa.isExcluido)
            .CountAsync();
